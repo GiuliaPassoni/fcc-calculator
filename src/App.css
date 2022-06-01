@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+  border-radius:5px;
+  font-weight: bold;
+  font-size: 1rem;
+  /*   margin:2%; */
+  /*   background-color:#32373B; */
+}
+.all{
+  max-width:280px;
+  height:40vh;
+  margin:auto;
+  margin-top:10%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  align-items:center;
+  background-color:#0F165D ;
+  padding: 1rem 0;
+}
+.displ{
+  font-family: Inconsolata, Consolas, monospace;
+  display:block;
+  width:60%;
+  height:40px;
+  margin:auto;
+  background-color:silver;
+  text-align:right;
+  border-radius:5px;
+}
+.nums{
+  font-family: 'Source Code Pro', monospace;
+  margin:auto;
+  width:90%;
+  height:60%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  /*   justify-content:space-evenly; */
+}
+.numbers, #equals{
+  width:30%;
+  margin:1%;
+}
+.numbers{
+
+  background-color:#F4D6CC;
+}
+#equals{
+  background-color:#EE6352;
+}
+
+.ope{
+  width:23%;
+  margin: 1%;
+  background-color:#93F0CC;
+}
+
+.container-ope {
+  width: 80%;
+  margin-right:10px;
+}
+
+.clear {
+  width: 15%;
+  padding:8px;
+  margin: 1%;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.res {
+  padding: 0.1rem;
+  padding-right: 0.3rem;
+}
