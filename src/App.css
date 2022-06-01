@@ -21,12 +21,12 @@
   padding: 1rem 0;
 }
 .displ{
-  font-family: Inconsolata, Consolas, monospace;
+  font-family: Inconsolata, Consolas, sans-serif;
   display:block;
   width:60%;
   height:40px;
   margin:auto;
-  background-color:silver;
+  background-color:floralwhite;
   text-align:right;
   border-radius:5px;
 }
@@ -74,4 +74,14 @@
 .res {
   padding: 0.1rem;
   padding-right: 0.3rem;
+}
+
+footer{
+  font-style: italic;
+  text-align:center;
+  margin-top:5px;
+}
+
+body{
+  background:repeating-linear-gradient(90deg,#0F165D,#93F0CC,#F4D6CC);
 }

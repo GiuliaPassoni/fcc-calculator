@@ -159,37 +159,42 @@ class App extends Component{
 
     render(){
         return(
-            <div className='container all'>
-                {/* Initial set-up:      */}
-                <div className='container displ'>
-                    <div className='res exp'>{this.state.exp}</div>
-                    <div className='res'><span id='display'>{this.state.result}</span></div>
-                </div>
-                <button className='clear' id='clear' onClick={this.reset.bind(this)}>AC</button>
-                <div className='container-ope'>
-                    <button className='ope' id='add' onClick={this.concatenate} value='+'>+</button>
-                    <button className='ope' id='subtract' onClick={this.concatenate} value='-'>-</button>
-                    <button className='ope' id='multiply' onClick={this.concatenate} value='*'>*</button>
-                    <button className='ope' id='divide' onClick={this.concatenate} value='/'>/</button>
-                </div>
+            <body>
+                <main>
+                    <div className='container all'>
+                        {/* Initial set-up:      */}
+                        <div className='container displ'>
+                            <div className='res exp'>{this.state.exp}</div>
+                            <div className='res'><span id='display'>{this.state.result}</span></div>
+                        </div>
+                        <button className='clear' id='clear' onClick={this.reset.bind(this)}>AC</button>
+                        <div className='container-ope'>
+                            <button className='ope' id='add' onClick={this.concatenate} value='+'>+</button>
+                            <button className='ope' id='subtract' onClick={this.concatenate} value='-'>-</button>
+                            <button className='ope' id='multiply' onClick={this.concatenate} value='*'>*</button>
+                            <button className='ope' id='divide' onClick={this.concatenate} value='/'>/</button>
+                        </div>
 
 
-                <div className='container nums'>
-                    <button className='numbers' id='seven' onClick={this.concatenate} value='7'>7</button>
-                    <button className='numbers' id='eight' onClick={this.concatenate} value='8'>8</button>
-                    <button className='numbers' id='nine' onClick={this.concatenate} value='9'>9</button>
-                    <button className='numbers' id='four' onClick={this.concatenate} value='4'>4</button>
-                    <button className='numbers' id='five' onClick={this.concatenate} value='5'>5</button>
-                    <button className='numbers' id='six' onClick={this.concatenate} value='6'>6</button>
-                    <button className='numbers' id='one' onClick={this.concatenate} value='1'>1</button>
-                    <button className='numbers' id='two' onClick={this.concatenate} value='2'>2</button>
-                    <button className='numbers' id='three' onClick={this.concatenate} value='3'>3</button>
-                    <button className='numbers' id='zero' onClick={this.concatenate} value='0'>0</button>
-                    <button className='numbers' id='decimal' onClick={this.concatenate} value='.'>.</button>
+                        <div className='container nums'>
+                            <button className='numbers' id='seven' onClick={this.concatenate} value='7'>7</button>
+                            <button className='numbers' id='eight' onClick={this.concatenate} value='8'>8</button>
+                            <button className='numbers' id='nine' onClick={this.concatenate} value='9'>9</button>
+                            <button className='numbers' id='four' onClick={this.concatenate} value='4'>4</button>
+                            <button className='numbers' id='five' onClick={this.concatenate} value='5'>5</button>
+                            <button className='numbers' id='six' onClick={this.concatenate} value='6'>6</button>
+                            <button className='numbers' id='one' onClick={this.concatenate} value='1'>1</button>
+                            <button className='numbers' id='two' onClick={this.concatenate} value='2'>2</button>
+                            <button className='numbers' id='three' onClick={this.concatenate} value='3'>3</button>
+                            <button className='numbers' id='zero' onClick={this.concatenate} value='0'>0</button>
+                            <button className='numbers' id='decimal' onClick={this.concatenate} value='.'>.</button>
 
-                    <button className='result' id='equals' onClick={this.resulting} value={this.state.exp}>=</button>
-                </div>
-            </div>
+                            <button className='result' id='equals' onClick={this.resulting} value={this.state.exp}>=</button>
+                        </div>
+                    </div>
+                </main>
+                <footer>Coded by Giulia Passoni 2022</footer>
+            </body>
         );
     }
 };
