@@ -194,6 +194,7 @@ class App extends Component{
                     </div>
                 </main>
                 <footer>Coded by Giulia Passoni 2022</footer>
+
             </body>
         );
     }
