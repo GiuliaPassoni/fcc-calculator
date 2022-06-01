@@ -79,10 +79,15 @@
 footer{
   font-style: italic;
   text-align:center;
-  margin-top:5px;
+  margin-top:10px;
   font-weight: lighter;
+  color:#0F165D;
 }
 
 body{
   background:repeating-linear-gradient(90deg,#0F165D,#93F0CC,#F4D6CC);
+}
+
+button:active{
+  opacity:50%;
 }
